@@ -90,7 +90,7 @@ export default function LoginPage() {
         </CardContent>
       </Card>
       <p className="mt-8 text-sm text-muted-foreground">
-        Desarrollado por <span className="font-semibold text-primary">Comisión tecnológica 2025</span>
+        Desarrollado por
       </p>
     </div>
   );
