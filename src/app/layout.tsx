@@ -15,7 +15,7 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "ActaVeraz",
+  title: "DelApp",
   description: "Plataforma de registro de actas de votación.",
 };
 

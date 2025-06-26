@@ -41,7 +41,7 @@ export default function LoginPage() {
           <div className="mx-auto mb-6">
             <Logo className="h-20 w-20" />
           </div>
-          <CardTitle className="text-3xl font-headline">ActaVeraz</CardTitle>
+          <CardTitle className="text-3xl font-headline">DelApp</CardTitle>
           <CardDescription>Iniciar Sesión</CardDescription>
         </CardHeader>
         <CardContent>

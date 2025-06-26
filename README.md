@@ -1,6 +1,6 @@
-# ActaVeraz
+# DelApp
 
-ActaVeraz es una aplicación web progresiva (PWA) diseñada para que los delegados de partido puedan registrar y transmitir de forma rápida y segura los resultados de las actas de votación el día de las elecciones. La aplicación guía al usuario a través de un flujo de trabajo sencillo, utiliza IA para la extracción de datos y garantiza la integridad de la información antes de enviarla a un sistema central.
+DelApp es una aplicación web progresiva (PWA) diseñada para que los delegados de partido puedan registrar y transmitir de forma rápida y segura los resultados de las actas de votación el día de las elecciones. La aplicación guía al usuario a través de un flujo de trabajo sencillo, utiliza IA para la extracción de datos y garantiza la integridad de la información antes de enviarla a un sistema central.
 
 ## ✨ Características Principales
 
