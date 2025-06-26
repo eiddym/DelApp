@@ -33,7 +33,6 @@ const voteSchema = z.object({
   votos_blancos: z.coerce.number().min(0, "Debe ser un número positivo"),
 }).superRefine((data, ctx) => {
     const presVotos = data.votos_partido_a_p + data.votos_partido_b_p + data.votos_partido_c_p;
-    const dipVotos = data.votos_partido_a_d + data.votos_partido_b_d + data.votos_partido_c_d;
     
     const totalEmitidos = presVotos + data.votos_nulos + data.votos_blancos;
 
@@ -42,14 +41,6 @@ const voteSchema = z.object({
         code: z.ZodIssueCode.custom,
         message: `El total de votos emitidos (${totalEmitidos}) no puede exceder los votantes habilitados (${VOTOS_HABILITADOS}).`,
         path: ["votos_blancos"],
-      });
-    }
-    
-    if (presVotos !== dipVotos) {
-      ctx.addIssue({
-        code: z.ZodIssueCode.custom,
-        message: `La suma de votos para Presidente (${presVotos}) y Diputado (${dipVotos}) debe ser idéntica.`,
-        path: ["votos_partido_c_d"],
       });
     }
 });
@@ -123,7 +114,7 @@ export default function DataEntryPage() {
   
   if (!isInitialized || !photoUri) return null;
 
-  const validationError = form.formState.errors.votos_blancos || form.formState.errors.votos_partido_c_d;
+  const validationError = form.formState.errors.votos_blancos;
 
   return (
     <Card className="w-full shadow-lg">
