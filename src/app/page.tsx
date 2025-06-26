@@ -89,9 +89,9 @@ export default function LoginPage() {
           </form>
         </CardContent>
       </Card>
-      <p className="mt-8 text-sm text-muted-foreground">
+      {/* <p className="mt-8 text-sm text-muted-foreground">
         Desarrollado por
-      </p>
+      </p> */}
     </div>
   );
 }
