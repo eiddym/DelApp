@@ -39,7 +39,7 @@ export default function LoginPage() {
       <Card className="w-full max-w-md shadow-lg">
         <CardHeader className="text-center">
           <div className="mx-auto mb-6">
-            <Logo className="h-20 w-20" />
+            <Logo />
           </div>
           <CardTitle className="text-3xl font-headline">DelApp</CardTitle>
           <CardDescription>Iniciar Sesión</CardDescription>
